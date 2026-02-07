@@ -11,13 +11,13 @@ An intelligent logistics engine architected by **Adewole Felix Bamidele**. This 
 
 ```mermaid
 graph LR
-    A[New Order (Shopify/Woo)] -->|Webhook| B(n8n Controller)
-    B -->|Extract Details| C{AI Priority Classifier}
-    C -->|High Value / Rush| D[🚨 Trigger Urgent Alert]
-    C -->|Standard| E[Log to Spreadsheet]
+    A["New Order (Shopify/Woo)"] -->|Webhook| B("n8n Controller")
+    B -->|"Extract Details"| C{"AI Priority Classifier"}
+    C -->|"High Value / Rush"| D["🚨 Trigger Urgent Alert"]
+    C -->|Standard| E["Log to Spreadsheet"]
     
-    D -->|API Call| F[Telegram Group: 'Warehouse Ops']
-    D -->|API Call| G[Twilio SMS: Logistics Manager]
+    D -->|"API Call"| F["Telegram Group: 'Warehouse Ops'"]
+    D -->|"API Call"| G["Twilio SMS: Logistics Manager"]
 
 
 🛠️ Technical Know-How
