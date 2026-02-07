@@ -18,18 +18,3 @@ graph LR
     
     D -->|"API Call"| F["Telegram Group: 'Warehouse Ops'"]
     D -->|"API Call"| G["Twilio SMS: Logistics Manager"]
-
-
-Technical Know-How
-1. Intelligent Routing (The "AI Brain")
-The system doesn't just notify; it thinks. It analyzes the order value and shipping method. If an order is marked "Express Shipping" or exceeds $500, it bypasses the standard queue and triggers a "Red Alert" notification.
-
-2. Multi-Channel Delivery
-Built with redundancy in mind. Alerts are sent simultaneously to a Telegram Group (for the floor staff) and via Twilio SMS (for the manager), ensuring 100% deliverability even if one channel fails.
-
-3. Payload Formatting
-Engineered the API payload to parse raw JSON order data into a clean, human-readable message (e.g., "📦 URGENT: Order #1024 - 50x Units - Needs Packing ASAP").
-
-Architected by: Adewole Felix Bamidele
-
-AI Automation Expert & Solutions Architect
